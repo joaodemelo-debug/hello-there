@@ -9,7 +9,7 @@ describe("Just Minimal community page", () => {
   it("links the call to action to the WhatsApp group invite", () => {
     render(<CommunityPage />);
 
-    const cta = screen.getByRole("link", { name: /entrar na comunidade/i });
+    const cta = screen.getByRole("link", { name: /join the community/i });
 
     expect(cta).toHaveAttribute(
       "href",
