@@ -21,14 +21,14 @@ export function JustMinimalMark({ className }: { className?: string }) {
 /** Full lockup: mark, wordmark, hairline, foundation line. */
 export function JustMinimalLogo({ className }: { className?: string }) {
   return (
-    <div className={cn("flex flex-col items-center gap-6", className)}>
-      <JustMinimalMark className="h-11 w-11 sm:h-14 sm:w-14" />
+    <div className={cn("flex flex-col items-center gap-7", className)}>
+      <JustMinimalMark className="h-14 w-14 sm:h-20 sm:w-20" />
       <div className="flex flex-col items-center gap-4">
-        <span className="font-sans text-[26px] font-medium uppercase leading-none tracking-[0.38em] [text-indent:0.38em] sm:text-[34px]">
+        <span className="font-sans text-[30px] font-medium uppercase leading-none tracking-[0.38em] [text-indent:0.38em] sm:text-[44px]">
           Just Minimal
         </span>
-        <span aria-hidden className="h-px w-14 bg-border" />
-        <span className="text-[9px] uppercase tracking-[0.52em] [text-indent:0.52em] text-muted-foreground">
+        <span aria-hidden className="h-px w-16 bg-border" />
+        <span className="text-[10px] uppercase tracking-[0.52em] [text-indent:0.52em] text-muted-foreground">
           Est. MMXXVI
         </span>
       </div>
