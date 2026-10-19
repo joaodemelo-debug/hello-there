@@ -7,17 +7,17 @@ const WHATSAPP_URL = "https://chat.whatsapp.com/CnEffGahKia2F0Y2F2mE6i?mode=gi_t
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Just Minimal — Comunidade" },
+      { title: "Just Minimal — Community" },
       {
         name: "description",
         content:
           "Get early access when the store opens + 10% off in all products. Join the Just Minimal community on WhatsApp.",
       },
-      { property: "og:title", content: "Just Minimal — Comunidade" },
+      { property: "og:title", content: "Just Minimal — Community" },
       {
         property: "og:description",
         content:
-          "Acesso antecipado a novos lançamentos, informações exclusivas, descontos e muito mais.",
+          "Early access to new launches, exclusive information, discounts and much more.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -39,7 +39,7 @@ export function CommunityPage() {
         />
 
         <p className="rise mt-7 text-[9px] font-bold uppercase tracking-[0.18em] [text-indent:0.18em] [animation-delay:120ms]">
-          Ainda sem loja... (abre em breve)
+          No store yet... (opening soon)
         </p>
 
         <h1 className="rise mt-2 text-[16px] font-extrabold uppercase leading-[1.3] tracking-[0.005em] sm:text-[18px] [animation-delay:200ms]">
@@ -48,11 +48,11 @@ export function CommunityPage() {
         </h1>
 
         <p className="rise mt-5 text-[9px] uppercase leading-[1.85] tracking-[0.04em] text-muted-foreground [animation-delay:280ms]">
-          Just Minimal community criada pra todos aqueles que acreditam e querem
-          fazer parte daquilo que estamos a construir.
+          Just Minimal community created for everyone who believes and wants to be
+          part of what we are building.
           <span className="block">
-            Tendo acesso antecipado a novos lançamentos, informações exclusivas,
-            descontos e muito mais.
+            With early access to new launches, exclusive information, discounts and
+            much more.
           </span>
         </p>
 
@@ -62,11 +62,11 @@ export function CommunityPage() {
           rel="noopener noreferrer"
           className="rise mt-6 block w-full bg-primary px-5 py-3 text-[10px] font-bold uppercase tracking-[0.14em] [text-indent:0.14em] text-primary-foreground transition-opacity duration-200 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring [animation-delay:340ms]"
         >
-          Entrar na comunidade
+          Join the community
         </a>
 
         <p className="rise mt-3 text-[9px] uppercase tracking-[0.12em] text-muted-foreground [animation-delay:400ms]">
-          Abre no grupo de WhatsApp da Just Minimal
+          Opens in the Just Minimal WhatsApp group
         </p>
       </main>
     </div>
