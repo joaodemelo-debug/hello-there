@@ -65,10 +65,10 @@
 
 :root {
   --radius: 0.625rem;
-  --font-display: "Instrument Serif", "Times New Roman", serif;
+  --font-display: "Archivo", "Helvetica Neue", sans-serif;
   --font-sans: "Archivo", "Helvetica Neue", sans-serif;
-  --background: oklch(0.983 0.005 85);
-  --foreground: oklch(0.22 0.018 60);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0 0 0);
   --card: oklch(0.995 0.003 85);
   --card-foreground: oklch(0.22 0.018 60);
   --popover: oklch(0.995 0.003 85);
