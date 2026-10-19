@@ -27,4 +27,21 @@ describe("Just Minimal community page", () => {
     expect(heading.textContent).toContain("early access");
     expect(heading.textContent).toContain("10% off in all products");
   });
+
+  // The page joins a WhatsApp group, so it must never ask for a phone number.
+  it("never asks the visitor for a phone number", () => {
+    const { container } = render(<CommunityPage />);
+
+    expect(screen.queryByRole("textbox")).toBeNull();
+    expect(container.querySelector("input")).toBeNull();
+    expect(container.textContent).not.toMatch(/phone number|n[úu]mero/i);
+  });
+
+  it("shows the Just Minimal signature logo", () => {
+    render(<CommunityPage />);
+
+    const logo = screen.getByRole("img", { name: /just minimal/i });
+
+    expect(logo.getAttribute("src")).toContain("just-minimal-logo.png");
+  });
 });
